@@ -4,9 +4,10 @@ import java.util.Scanner;
 public class PokedexView {
     private final Scanner sc = new Scanner(System.in);
     static final String MENU = "Seleccione su opcion";
-    static final String OPCION1 = "Buscar un pokemon por su nombre.";
-    static final String OPCION2 = "Buscar un pokemon por su número.";
-    static final String OPCION3 = "Salir.";
+    static final String OPCION1 = "1. Buscar un pokemon por su nombre.";
+    static final String OPCION2 = "2. Buscar un pokemon por su número.";
+    static final String OPCION3 = "3. Salir.";
+    static final String BUSQUEDA = "Buscar: ";
 
     public void mostrarMenu(){ //Imprime las opciones del menu
         System.out.println(MENU);
@@ -15,11 +16,13 @@ public class PokedexView {
         System.out.println(OPCION3);
     }
     public String leerString(){
+        System.out.println(BUSQUEDA);
         String nombre = sc.nextLine(); //Lee una variable String
         return nombre;
     }
 
     public int leerEntero(){
+        System.out.println(BUSQUEDA);
         int numero = sc.nextInt();
         sc.nextLine(); //para limpiar el buffer
         return numero;

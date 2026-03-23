@@ -10,6 +10,6 @@ public class Main {
 
         System.out.println("-----Inicializando POKEDEX-----");
         controlador.init();
-        System.out.println("-----\tCerrando POKEDEX-----");
+        System.out.println("-----\tCerrando POKEDEX\t-----");
     }
 }
