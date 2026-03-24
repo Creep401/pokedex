@@ -8,7 +8,7 @@ public class Main {
         PokedexView vista = new PokedexView();
         PokedexController controlador = new PokedexController(vista);
         final String INICIO = "-----Inicializando POKEDEX-----";
-        final String FINAL = "-----\\tCerrando POKEDEX\\t-----";
+        final String FINAL = "-----\tCerrando POKEDEX\t-----";
 
         System.out.println(INICIO);
         controlador.init();
