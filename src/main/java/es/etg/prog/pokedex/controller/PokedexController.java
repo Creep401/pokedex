@@ -15,7 +15,7 @@ public class PokedexController {
             vista.mostrarMenu();
             opcion = vista.leerEntero();
             switch (opcion) {
-                case 3 -> salir = true;
+                case PokedexView.OPC_MENU_SALIR -> salir = true;
             }
         } while (!salir);
     }

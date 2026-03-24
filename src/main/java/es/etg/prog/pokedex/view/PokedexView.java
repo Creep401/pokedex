@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class PokedexView {
     private final Scanner sc = new Scanner(System.in);
+    public static final int OPC_MENU_SALIR = 3;
 
     public void mostrarMenu(){ //Imprime las opciones del menu
         System.out.println("Seleccione su opcion");
