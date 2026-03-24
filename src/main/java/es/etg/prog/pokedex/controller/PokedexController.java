@@ -9,16 +9,14 @@ public class PokedexController {
     }
 
     public void init(){
+        boolean salir = false;
         int opcion;
         do { 
             vista.mostrarMenu();
             opcion = vista.leerEntero();
             switch (opcion) {
-                case 1 -> vista.leerString();
-                case 2 -> vista.leerEntero();
-                case 3 -> {}
-                default -> throw new AssertionError();
+                case 3 -> salir = true;
             }
-        } while (opcion != 3);
+        } while (!salir);
     }
 }
